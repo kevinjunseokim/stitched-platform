@@ -1,10 +1,5 @@
 # Stitched
 
-Stitched is split into clearly defined frontend and backend apps.
-
-- `frontend/` contains the Vite/React product UI.
-- `backend/` contains the Python/Flask API with SQLite persistence.
-
 ## Run locally
 
 Install frontend dependencies:
@@ -31,30 +26,6 @@ npm run dev:frontend
 ```
 
 The backend runs on `http://localhost:5001`, and the frontend runs on `http://localhost:5173`. Runtime data is stored in `backend/data/stitched.sqlite`, which is intentionally ignored by git.
-
-## Production deployment
-
-Set these environment variables before starting the backend:
-
-```bash
-ENVIRONMENT=production
-SECRET_KEY=<strong-random-secret>
-DATABASE_URL=<sqlalchemy-database-url>
-CORS_ORIGINS=https://your-frontend.example
-```
-
-Run database migrations explicitly during deploy:
-
-```bash
-cd backend
-flask --app wsgi:app db upgrade
-```
-
-Start the API with gunicorn:
-
-```bash
-cd backend
-gunicorn wsgi:app
 ```
 
 Demo data is development-only and should be seeded manually with `python seed.py` when needed. Production startup does not seed demo users or catalog data automatically.
