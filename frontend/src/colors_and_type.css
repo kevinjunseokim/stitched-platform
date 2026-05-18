@@ -1,0 +1,319 @@
+/* ============================================================
+   Stitched — Colors & Type
+   The playing field: green grass, leather, chalk, clay, paper.
+   Sharp corners. Grid-aligned. Editorial sports newspaper meets
+   trading terminal.
+   ============================================================ */
+
+/* ---- Fonts: loaded from Google Fonts in the host HTML ----
+   <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Newsreader:ital,opsz,wght@1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
+*/
+
+:root {
+  /* ============================================================
+     CORE PALETTE — the playing field
+     ============================================================ */
+
+  /* Field greens (primary brand) — grass at golden hour */
+  --field-900: #0C2218;   /* deep shade under bleachers */
+  --field-800: #15321F;   /* outfield grass in shadow */
+  --field-750: #1A3E27;   /* MOW STRIPE — darker band on the pitch */
+  --field-700: #1F4A30;   /* primary brand green */
+  --field-stripe: #2A5C3C;/* MOW STRIPE — lighter band on the pitch */
+  --field-600: #2C6444;   /* fresh-cut grass */
+  --field-500: #3E8459;   /* sun on infield */
+  --field-400: #6BAD83;   /* faded turf */
+  --field-300: #A8CFB6;   /* chalk-line haze */
+  --field-100: #DCEADF;   /* mint tint */
+
+  /* Leather browns (secondary) — glove, bat handle, ball mud */
+  --leather-900: #2B1A0F;
+  --leather-800: #3E2616; /* old catcher's mitt */
+  --leather-700: #5C3820; /* primary leather */
+  --leather-600: #7A4D2D; /* saddle */
+  --leather-500: #9B6840; /* worn bat */
+  --leather-400: #BB8A5F; /* sun-bleached */
+  --leather-300: #D9B68A;
+  --leather-100: #EFE0CB;
+
+  /* Paper / cream (backgrounds) — vintage program, ticket stock */
+  --paper-100: #FBF7EE;   /* program page */
+  --paper-200: #F4EDDD;   /* ticket stock */
+  --paper-300: #E9DFC6;   /* aged paper edge */
+  --paper-400: #D6C8A6;
+
+  /* Chalk (light neutrals on dark) */
+  --chalk-100: #FAFAF5;   /* fresh chalk line */
+  --chalk-200: #EBEAE0;
+  --chalk-300: #C9C7B8;
+
+  /* Ink (dark neutrals — printed text) */
+  --ink-900: #0F0D08;     /* deepest, near-black, warm */
+  --ink-800: #1A1610;     /* primary text on paper */
+  --ink-700: #2A251C;
+  --ink-600: #4A4337;     /* secondary text */
+  --ink-500: #6B6353;     /* tertiary, captions */
+  --ink-400: #8E8775;     /* placeholder */
+  --ink-300: #B5AE9C;     /* dividers on paper */
+  --ink-200: #D8D2BF;
+  --ink-100: #EBE6D5;
+
+  /* Clay (accent — alerts, hot items, "on fire", PRs) */
+  --clay-900: #5E1F0F;
+  --clay-700: #9B3618;    /* primary accent */
+  --clay-500: #C75232;    /* bright clay */
+  --clay-300: #E6A285;
+  --clay-100: #F6DACA;
+
+  /* Pinstripe blue (rare, used for "authenticated" and links) */
+  --pin-800: #0F2540;
+  --pin-700: #1A3F6B;     /* authenticated badge */
+  --pin-500: #3F6FA8;
+  --pin-300: #9FB9D6;
+
+  /* Gold (championship, top-ranked, rare scarcity) */
+  --gold-700: #8A6A1E;
+  --gold-500: #B8902F;
+  --gold-400: #D4AF52;
+  --gold-200: #EFD89B;
+
+  /* ============================================================
+     SEMANTIC TOKENS — what designers actually reach for
+     ============================================================ */
+
+  /* Surfaces */
+  --bg:            var(--paper-100);
+  --bg-sunken:    var(--paper-200);
+  --bg-raised:    var(--paper-100);
+  --bg-inverse:   var(--field-900);
+  --bg-field:     var(--field-700);   /* signature green panels */
+  --bg-leather:   var(--leather-800);
+
+  /* Foreground (text) */
+  --fg:           var(--ink-800);
+  --fg-muted:     var(--ink-600);
+  --fg-subtle:    var(--ink-500);
+  --fg-faint:     var(--ink-400);
+  --fg-inverse:   var(--chalk-100);
+  --fg-inverse-muted: var(--chalk-300);
+
+  /* Borders — the chalk lines on the field */
+  --border:        var(--ink-200);
+  --border-strong: var(--ink-800);
+  --border-faint:  var(--ink-100);
+  --border-inverse: rgba(250, 250, 245, 0.18);
+  --border-chalk:   rgba(250, 250, 245, 0.55); /* on field-green */
+
+  /* Brand + accents */
+  --brand:        var(--field-700);
+  --brand-hover:  var(--field-800);
+  --brand-fg:     var(--chalk-100);
+  --accent:       var(--clay-700);
+  --accent-hover: var(--clay-900);
+
+  /* Status */
+  --positive:     var(--field-600);   /* up arrows, gains */
+  --negative:     var(--clay-700);    /* down arrows, losses */
+  --warn:         var(--gold-500);
+  --info:         var(--pin-700);
+  --authenticated: var(--pin-700);
+  --hot:           var(--clay-500);
+
+  /* ============================================================
+     TYPOGRAPHY
+     ============================================================ */
+
+  /* Families
+     Geist — primary sans for ALL UI, headings, and display. Modern
+       grotesque (Ramp-adjacent feel) — neutral, slightly humanist,
+       clean for dashboards. CARRIES THE BRAND.
+     Newsreader — used ITALIC ONLY, as an accent for emphasized
+       words inside headlines, pullquotes, section marks. NEVER set
+       as the primary headline face.
+     Geist — data, prices, indices, eyebrows, tickers.
+       Tabular numerals always on.
+  */
+  --font-sans:    "Geist", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  --font-accent:  "Newsreader", "Source Serif 4", Georgia, serif;  /* italic only */
+  --font-display: var(--font-sans);                                /* alias — display IS sans now */
+  --font-mono:    var(--font-sans);
+
+  /* Type scale — generous, editorial */
+  --t-hero:    72px;  /* magazine cover headline */
+  --t-display: 56px;  /* page hero */
+  --t-h1:      40px;
+  --t-h2:      30px;
+  --t-h3:      22px;
+  --t-h4:      18px;
+  --t-body:    16px;
+  --t-small:   14px;
+  --t-micro:   12px;
+  --t-tick:    11px;  /* tabular ticker text */
+
+  --lh-tight:  1.05;
+  --lh-snug:   1.2;
+  --lh-base:   1.5;
+  --lh-loose:  1.65;
+
+  --tracking-tight:  -0.02em;
+  --tracking-base:   0;
+  --tracking-wide:   0.04em;
+  --tracking-eyebrow: 0.16em;   /* uppercase eyebrows / scoreboard */
+
+  /* ============================================================
+     SPACING — 4px base
+     ============================================================ */
+  --s-0:  0;
+  --s-1:  4px;
+  --s-2:  8px;
+  --s-3:  12px;
+  --s-4:  16px;
+  --s-5:  20px;
+  --s-6:  24px;
+  --s-7:  32px;
+  --s-8:  40px;
+  --s-9:  48px;
+  --s-10: 64px;
+  --s-11: 80px;
+  --s-12: 120px;
+
+  /* ============================================================
+     RADII — SHARP. This brand is a playing field.
+     ============================================================ */
+  --r-0: 0;        /* default — everything is square */
+  --r-1: 1px;      /* hairline, rare */
+  --r-2: 2px;      /* chips/badges only, optional */
+  --r-pill: 999px; /* avatar/circle only — never on rectangles */
+
+  /* ============================================================
+     ELEVATION — borders + surface tone only. NO drop shadows.
+     Depth is expressed by fill darkness and border weight, like
+     a newspaper laid flat on a desk.
+     ============================================================ */
+  --e-sunken:   var(--paper-200);   /* row hover, inputs at rest */
+  --e-resting:  var(--paper-100);   /* default page surface */
+  --e-raised:   var(--paper-100);            /* cards, modals on paper */
+  --e-emphasis-border: var(--ink-800);  /* selected / focused */
+  --e-resting-border:  var(--ink-200);
+  --e-faint-border:    var(--ink-100);
+  --rule-inset: inset 0 -1px 0 var(--ink-200);  /* nav bottom rule */
+  --rule-chalk: inset 0 0 0 1px var(--border-chalk);  /* chalk box on green */
+
+  /* ============================================================
+     PITCH STRIPES — alternating mow bars on every green surface.
+     Use as `background: var(--bg-pitch)` on a green panel.
+     ============================================================ */
+  --pitch-stripe: 36px;  /* default stripe height */
+  --bg-pitch:
+    repeating-linear-gradient(
+      180deg,
+      var(--field-700) 0,
+      var(--field-700) var(--pitch-stripe),
+      var(--field-stripe) var(--pitch-stripe),
+      var(--field-stripe) calc(var(--pitch-stripe) * 2)
+    );
+  --bg-pitch-deep:
+    repeating-linear-gradient(
+      180deg,
+      var(--field-800) 0,
+      var(--field-800) var(--pitch-stripe),
+      var(--field-750) var(--pitch-stripe),
+      var(--field-750) calc(var(--pitch-stripe) * 2)
+    );
+  --grid-gutter: 24px;
+  --col-12: repeat(12, minmax(0, 1fr));
+  --container-max: 1320px;
+  --container-narrow: 880px;
+
+  /* ============================================================
+     MOTION — minimal. fast, no bounce. like a stopwatch click.
+     ============================================================ */
+  --ease-out: cubic-bezier(0.2, 0.7, 0.1, 1);
+  --ease-in:  cubic-bezier(0.5, 0, 0.8, 0.4);
+  --dur-1: 80ms;
+  --dur-2: 140ms;
+  --dur-3: 220ms;
+  --dur-4: 360ms;
+}
+
+/* ============================================================
+   BASE / ELEMENT STYLES
+   ============================================================ */
+html, body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-sans);
+  font-size: var(--t-body);
+  line-height: var(--lh-base);
+  font-feature-settings: "ss01", "cv11";
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1, .h1, h2, .h2, h3, .h3 {
+  font-family: var(--font-sans);
+  color: var(--fg);
+  letter-spacing: var(--tracking-tight);
+  font-weight: 500;
+  line-height: var(--lh-tight);
+  text-wrap: balance;
+  margin: 0;
+}
+.t-hero    { font-family: var(--font-sans); font-size: var(--t-hero);    line-height: 0.98; letter-spacing: -0.035em; font-weight: 500; }
+.t-display { font-family: var(--font-sans); font-size: var(--t-display); line-height: 1.02; letter-spacing: -0.03em;  font-weight: 500; }
+h1, .h1    { font-size: var(--t-h1); letter-spacing: -0.025em; font-weight: 500; }
+h2, .h2    { font-size: var(--t-h2); letter-spacing: -0.02em; font-weight: 500; }
+h3, .h3    { font-size: var(--t-h3); font-weight: 500; letter-spacing: -0.01em; }
+h4, .h4    { font-size: var(--t-h4); font-weight: 500; line-height: var(--lh-snug); letter-spacing: -0.005em; margin: 0; }
+
+p, .p      { font-size: var(--t-body); line-height: var(--lh-loose); color: var(--fg); margin: 0; text-wrap: pretty; }
+.p-lead    { font-size: var(--t-h4); line-height: 1.5; color: var(--fg-muted); font-weight: 400; }
+
+/* The ACCENT — italic Newsreader. Use sparingly inside headlines (<em>), pullquotes, section marks. NEVER as the main display face. */
+.accent, em.accent {
+  font-family: var(--font-accent);
+  font-style: italic;
+  font-weight: 400;
+}
+
+.serif-italic { font-family: var(--font-accent); font-style: italic; font-weight: 400; }
+
+.small     { font-size: var(--t-small); }
+.micro     { font-size: var(--t-micro); }
+
+/* Eyebrow / scoreboard label — uppercase, mono, tracked */
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: var(--t-micro);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-eyebrow);
+  font-weight: 500;
+  color: var(--fg-muted);
+}
+
+/* Tabular numerals — every price/stat uses this.
+   Family is Geist (not mono) so prices feel native to the UI, not terminal. */
+.num, .ticker, .stat {
+  font-family: var(--font-sans);
+  font-feature-settings: "tnum", "zero";
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.01em;
+}
+
+.serif-italic { font-family: var(--font-accent); font-style: italic; font-weight: 400; }
+
+/* By default <em> uses the accent serif italic — this is the brand's accent rule.
+   Override with .em-sans if you specifically need sans italic. */
+em {
+  font-family: var(--font-accent);
+  font-style: italic;
+  font-weight: 400;
+}
+.em-sans { font-family: inherit; font-style: italic; }
+
+code, kbd, .mono { font-family: var(--font-mono); font-size: 0.92em; }
+
+a { color: var(--pin-700); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+a:hover { color: var(--pin-800); }
+
+hr { border: 0; border-top: 1px solid var(--border); margin: var(--s-6) 0; }

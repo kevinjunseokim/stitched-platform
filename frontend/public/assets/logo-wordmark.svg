@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" fill="none">
+  
+  <text x="0" y="56" font-family="Newsreader, &#39;Source Serif 4&#39;, Georgia, serif" font-size="64" font-weight="500" fill="#0F0D08" letter-spacing="-1.6">Stitched<tspan font-family="Newsreader, &#39;Source Serif 4&#39;, Georgia, serif" font-style="italic" font-weight="400" fill="#9B3618">.</tspan></text>
+  
+  <path d="M 6 70 Q 80 78 160 70 T 314 70" stroke="#9B3618" stroke-width="1.6" stroke-dasharray="4 5" fill="none" stroke-linecap="round"></path>
+  <path d="M 6 74 Q 80 82 160 74 T 314 74" stroke="#9B3618" stroke-width="1.6" stroke-dasharray="4 5" stroke-dashoffset="4" fill="none" stroke-linecap="round"></path>
+</svg>

@@ -1,0 +1,8 @@
+{
+  "name": "stitched-backend",
+  "private": true,
+  "scripts": {
+    "dev": "python app.py",
+    "prod": "gunicorn wsgi:app"
+  }
+}

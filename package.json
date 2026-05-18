@@ -1,0 +1,9 @@
+{
+  "name": "stitched-workspace",
+  "private": true,
+  "scripts": {
+    "dev:backend": "cd backend && python app.py",
+    "dev:frontend": "cd frontend && npm run dev",
+    "build": "cd frontend && npm run build"
+  }
+}
