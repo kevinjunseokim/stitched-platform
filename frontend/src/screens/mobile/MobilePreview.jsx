@@ -88,7 +88,7 @@ function MobileFeed() {
           </div>
           <div style={{ padding: 14 }}>
             <Num size={26} weight={500} style={{ letterSpacing: '-0.02em' }}>2,884.06</Num>
-            <Sparkline data={SERIES.edwards.slice(-12)} w={300} h={50}/>
+            <Sparkline data={SERIES['victor-wembanyama'].slice(-12)} w={300} h={50}/>
           </div>
         </div>
         <div style={{ background: COLORS.paper, border: `1px solid ${COLORS.border}`, marginBottom: 14 }}>

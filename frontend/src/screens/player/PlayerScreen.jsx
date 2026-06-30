@@ -69,7 +69,7 @@ function PlayerChart({ player }) {
     return () => { cancelled = true; };
   }, [api, player.id, range]);
 
-  const values = points.length ? points.map((p) => p.value) : (SERIES[player.id.split('-')[1]] || SERIES.carroll);
+  const values = points.length ? points.map((p) => p.value) : (SERIES[player.id] || SERIES['corbin-carroll']);
   const delta = values.length >= 2 && values[0] > 0 ? ((values[values.length - 1] - values[0]) / values[0]) * 100 : 0;
 
   return (

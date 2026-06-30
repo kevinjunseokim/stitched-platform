@@ -1,0 +1,284 @@
+{
+  "collectors": {
+    "kevin": {
+      "handle": "kevin",
+      "displayName": "Kevin Kim",
+      "initials": "KK",
+      "color": "#5C3820"
+    },
+    "maya": {
+      "handle": "maya",
+      "displayName": "Maya Okafor",
+      "initials": "MO",
+      "color": "#1A3F6B"
+    },
+    "rcho": {
+      "handle": "rcho",
+      "displayName": "Roland Cho",
+      "initials": "RC",
+      "color": "#1F4A30"
+    },
+    "theo": {
+      "handle": "theo",
+      "displayName": "Theo Brandt",
+      "initials": "TB",
+      "color": "#9B3618"
+    },
+    "camille": {
+      "handle": "camille",
+      "displayName": "Camille Lefevre",
+      "initials": "CL",
+      "color": "#B8902F"
+    }
+  },
+  "previewItems": [
+    {
+      "id": "carroll-bat-2023",
+      "title": "Corbin Carroll 2023 Rookie Season Game-Used Bat",
+      "player": "corbin-carroll",
+      "team": "Arizona Diamondbacks",
+      "sport": "MLB",
+      "type": "Bat",
+      "season": "2023",
+      "gameDate": "2023-09-12",
+      "usage": "Game-Used",
+      "auth": "MLB Authentication",
+      "cert": "MLB-CC-0428-9B",
+      "acquired": 1850,
+      "acquiredDate": "2024-02-04",
+      "estimate": {
+        "low": 2400,
+        "mid": 2850,
+        "high": 3200
+      },
+      "confidence": "Medium",
+      "tint": "#5C3820",
+      "glyph": "B",
+      "tags": [
+        "Rookie season",
+        "Game used",
+        "MLB authenticated",
+        "Bat",
+        "Diamondbacks"
+      ],
+      "badges": [
+        {
+          "kind": "auth",
+          "label": "\u2713 AUTH"
+        },
+        {
+          "kind": "field",
+          "label": "ROOKIE"
+        }
+      ],
+      "notes": "Pulled from the Sept 12 game vs LAD \u2014 Carroll went 2-for-4. Hologram verified through MLB portal. Photo-matched to 7th inning AB.",
+      "forSale": false,
+      "owner": "kevin"
+    },
+    {
+      "id": "ohtani-ball",
+      "title": "Shohei Ohtani MLB-Authenticated Game-Used Baseball",
+      "player": "shohei-ohtani",
+      "team": "Los Angeles Dodgers",
+      "sport": "MLB",
+      "type": "Baseball",
+      "season": "2024",
+      "gameDate": "2024-06-22",
+      "usage": "Game-Used",
+      "auth": "MLB Authentication",
+      "cert": "MLB-SO-1142-A2",
+      "acquired": 4200,
+      "acquiredDate": "2024-08-15",
+      "estimate": {
+        "low": 5800,
+        "mid": 6400,
+        "high": 7100
+      },
+      "confidence": "High",
+      "tint": "#1F4A30",
+      "glyph": "B",
+      "tags": [
+        "Game used",
+        "MLB authenticated",
+        "Baseball",
+        "Dodgers"
+      ],
+      "badges": [
+        {
+          "kind": "auth",
+          "label": "\u2713 MLB AUTH"
+        }
+      ],
+      "notes": "Foul ball, Game 1 of June series at Dodger Stadium. MLB hologram intact.",
+      "forSale": false,
+      "owner": "kevin"
+    },
+    {
+      "id": "edwards-jersey",
+      "title": "Anthony Edwards Signed Rookie Jersey",
+      "player": "anthony-edwards",
+      "team": "Minnesota Timberwolves",
+      "sport": "NBA",
+      "type": "Jersey",
+      "season": "2020-21",
+      "gameDate": null,
+      "usage": "Signed (Rookie)",
+      "auth": "Fanatics Authentic",
+      "cert": "FAN-AE-RK-3091",
+      "acquired": 1100,
+      "acquiredDate": "2022-11-09",
+      "estimate": {
+        "low": 3600,
+        "mid": 4200,
+        "high": 4800
+      },
+      "confidence": "High",
+      "tint": "#1A3F6B",
+      "glyph": "J",
+      "tags": [
+        "Signed",
+        "Rookie",
+        "Fanatics Authentic",
+        "Jersey",
+        "Timberwolves"
+      ],
+      "badges": [
+        {
+          "kind": "auth",
+          "label": "\u2713 FAN AUTH"
+        },
+        {
+          "kind": "hot",
+          "label": "\u2022 HOT"
+        }
+      ],
+      "notes": "Signed at 2021 All-Star weekend rookie photo. Fanatics hologram on back tail.",
+      "forSale": true,
+      "askingPrice": 4600,
+      "owner": "kevin"
+    },
+    {
+      "id": "mahomes-cleats",
+      "title": "Patrick Mahomes Game-Used Cleats",
+      "player": "patrick-mahomes",
+      "team": "Kansas City Chiefs",
+      "sport": "NFL",
+      "type": "Cleats",
+      "season": "2023",
+      "gameDate": "2023-10-22",
+      "usage": "Game-Used",
+      "auth": "Fanatics Authentic",
+      "cert": "FAN-PM-CL-0871",
+      "acquired": 3800,
+      "acquiredDate": "2024-01-20",
+      "estimate": {
+        "low": 4800,
+        "mid": 5400,
+        "high": 6000
+      },
+      "confidence": "Medium",
+      "tint": "#9B3618",
+      "glyph": "C",
+      "tags": [
+        "Game used",
+        "Fanatics Authentic",
+        "Cleats",
+        "Chiefs"
+      ],
+      "badges": [
+        {
+          "kind": "auth",
+          "label": "\u2713 FAN AUTH"
+        },
+        {
+          "kind": "game",
+          "label": "GAME-USED"
+        }
+      ],
+      "notes": "Pair worn in Week 7 win vs LAC. Field wear and turf marks visible.",
+      "forSale": false,
+      "owner": "kevin"
+    },
+    {
+      "id": "julio-gloves",
+      "title": "Julio Rodr\u00edguez Game-Used Batting Gloves",
+      "player": "julio-rodriguez",
+      "team": "Seattle Mariners",
+      "sport": "MLB",
+      "type": "Batting Gloves",
+      "season": "2023",
+      "gameDate": "2023-08-04",
+      "usage": "Game-Used",
+      "auth": "MLB Authentication",
+      "cert": "MLB-JR-2208-7D",
+      "acquired": 920,
+      "acquiredDate": "2024-03-12",
+      "estimate": {
+        "low": 880,
+        "mid": 1050,
+        "high": 1240
+      },
+      "confidence": "Low",
+      "tint": "#B8902F",
+      "glyph": "G",
+      "tags": [
+        "Game used",
+        "MLB authenticated",
+        "Batting gloves",
+        "Mariners"
+      ],
+      "badges": [
+        {
+          "kind": "auth",
+          "label": "\u2713 MLB AUTH"
+        }
+      ],
+      "notes": "Photo-matched to August home stand. Right glove has pine tar residue at grip.",
+      "forSale": false,
+      "owner": "kevin"
+    },
+    {
+      "id": "wemby-jersey",
+      "title": "Victor Wembanyama Rookie Photo-Matched Jersey",
+      "player": "victor-wembanyama",
+      "team": "San Antonio Spurs",
+      "sport": "NBA",
+      "type": "Jersey",
+      "season": "2023-24",
+      "gameDate": "2024-02-09",
+      "usage": "Game-Used (Photo-Match)",
+      "auth": "MeiGray + Photo Match",
+      "cert": "MEIGRAY-VW-1009",
+      "acquired": 28000,
+      "acquiredDate": "2024-04-30",
+      "estimate": {
+        "low": 62000,
+        "mid": 74000,
+        "high": 86000
+      },
+      "confidence": "High",
+      "tint": "#3E2616",
+      "glyph": "J",
+      "tags": [
+        "Rookie",
+        "Photo-match",
+        "MeiGray",
+        "Jersey",
+        "Spurs"
+      ],
+      "badges": [
+        {
+          "kind": "rare",
+          "label": "\u2605 PHOTO-MATCH"
+        },
+        {
+          "kind": "auth",
+          "label": "\u2713 MEIGRAY"
+        }
+      ],
+      "notes": "Photo-matched to Feb 9 vs DEN \u2014 Wemby 31p/11r/7b. Hem chain stitched and back chevron crease align.",
+      "forSale": false,
+      "owner": "kevin"
+    }
+  ]
+}
