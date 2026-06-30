@@ -3,8 +3,8 @@ import { createContext, useContext } from 'react';
 import { makeApiClient } from '../api/client';
 
 // Default shape used by `createContext` so consumers can introspect the
-// schema without crashing if used outside a provider. The real values
-// come from `AppDataProvider`.
+// schema without crashing if used outside a provider. Real values are
+// composed in `AppDataProvider` from the hooks under `context/hooks/`.
 export const AppDataContext = createContext({
   api: makeApiClient(null),
   auth: null,
